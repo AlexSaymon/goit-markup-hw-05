@@ -54,8 +54,7 @@ a {
 .header {
   border-bottom: 1px solid #e7e9fc;
   background-color: #fff;
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
@@ -163,10 +162,7 @@ a {
 
 .main-section {
   background-color: #2e2f42;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/header-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -323,8 +319,7 @@ a {
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
   background: #fff;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
@@ -417,8 +412,8 @@ a {
 }
 
 .portfolio-list:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list:hover .portfolio-anim-text {
@@ -563,13 +558,13 @@ a {
   min-height: 584px;
   border-radius: 4px;
   background-color: #fcfcfc;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 24px;
+  padding: 72px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -584,6 +579,7 @@ a {
   right: 24px;
   top: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .modal-close-icon {
@@ -612,7 +608,6 @@ a {
   max-width: 360px;
   width: 100%;
   margin-bottom: 16px;
-  margin-top: 48px;
 }
 
 .modal-label {
@@ -630,6 +625,8 @@ a {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-bottom: 8px;
+  padding-left: 38px;
+  outline: transparent;
 }
 
 .modal-textarea {
@@ -643,9 +640,47 @@ a {
   letter-spacing: 0.04em;
   padding: 8px 16px;
   margin-bottom: 16px;
+  outline: transparent;
+}
+.modal-input:hover,
+.modal-input:focus,
+.modal-textarea:hover,
+.modal-textarea:focus {
+  border: 1px solid #4d5ae5;
 }
 
-.modal-wrap {
+.modal-input:hover + .modal-icon,
+.modal-input:hover + .modal-icon-emph,
+.modal-icon-emph:hover,
+.modal-textarea:hover,
+.modal-icon:hover {
+  fill: #4d5ae5;
+}
+
+.modal-input:focus + .modal-icon,
+.modal-input:focus + .modal-icon-emph,
+.modal-icon-emph:focus,
+.modal-textarea:focus,
+.modal-icon:focus {
+  fill: #4d5ae5;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-icon,
+.modal-icon-emph {
+  position: absolute;
+  left: 16px;
+}
+
+.modal-icon {
+  top: 11px;
+}
+
+.modal-icon-emph {
+  top: 8px;
 }
 
 .modal-submit-btn {
@@ -670,10 +705,11 @@ a {
 }
 
 .modal-submit-btn {
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submit-btn:hover,
-.modal-submit-btn {
+.modal-submit-btn:focus {
   background-color: #404bbf;
 }
