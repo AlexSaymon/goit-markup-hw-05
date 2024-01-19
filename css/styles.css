@@ -788,6 +788,9 @@ button {
 }
 
 .comment-span {
+}
+
+.checkbox-text span {
   border-radius: 2px;
   width: 16px;
   height: 16px;
