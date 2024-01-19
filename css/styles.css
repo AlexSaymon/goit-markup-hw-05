@@ -538,7 +538,7 @@ button {
   fill: #f4f4fd;
 }
 
-.footer-label {
+.footer-form {
   gap: 24px;
 }
 
@@ -551,16 +551,16 @@ button {
 }
 
 .footer-email {
-  margin-right: 24px;
   width: 264px;
   height: 40px;
   background-color: #2e2f42;
   border-radius: 4px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
   outline: transparent;
-  color: #fff;
+  background-color: transparent;
+  color: #ffffff;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
